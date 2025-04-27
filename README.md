@@ -75,6 +75,8 @@ Use the following command to run the program:
 ```bash
 mpirun -mca btl_tcp_if_include ibp216s0f0 -np 8 --hostfile <hostfile> ./dht_count <input_file> <query_file>
 
+```bash
+
 -np 8: Runs the program with 8 processes.
 
 --hostfile <hostfile>: Path to the hostfile.
