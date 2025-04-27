@@ -84,4 +84,12 @@ mpirun -mca btl_tcp_if_include ibp216s0f0 -np 8 --hostfile <hostfile> ./dht_coun
 
 ./dht_count <input_file> <query_file>: Run the executable with input and query files.
 
+### 3. Example Run
+Use the following command to run the program:
 
+```
+mpirun -mca btl_tcp_if_include ibp216s0f0 -np 8 --hostfile hostfile ./dht_count test1.txt query.txt
+```
+- test1.txt: Input file for word counting.
+- query.txt: Query file (can be used for additional processing).
+  
