@@ -59,3 +59,26 @@ The **Global Distributed Hash Table for Word Counting** project leverages MPI (M
 4. **Build the program**:
    ```bash
    make
+
+## Run Instructions
+
+### 1. Prepare the Hostfile
+The hostfile should list the available compute nodes. Example content for a hostfile (`hostfile`):
+
+```plaintext
+node1 slots=4
+node2 slots=4
+
+### 2. Run the Program
+Use the following command to run the program:
+
+```bash
+mpirun -mca btl_tcp_if_include ibp216s0f0 -np 8 --hostfile <hostfile> ./dht_count <input_file> <query_file>
+
+-np 8: Runs the program with 8 processes.
+
+--hostfile <hostfile>: Path to the hostfile.
+
+./dht_count <input_file> <query_file>: Run the executable with input and query files.
+
+
