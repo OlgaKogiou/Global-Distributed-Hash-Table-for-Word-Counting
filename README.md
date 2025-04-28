@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The **Global Distributed Hash Table for Word Counting** project leverages MPI (Message Passing Interface) for parallel word counting across multiple nodes. The program divides a text file into portions, processes each portion in parallel, and counts the frequency of words, then aggregates the results into a distributed hash table.
+The **Global Distributed Hash Table for Word Counting** project leverages MPI for parallel word counting across multiple nodes. The program divides a text file into portions, processes each portion in parallel, and counts the frequency of words, then aggregates the results into a distributed hash table.
 
 ---
 
